@@ -1,0 +1,125 @@
+.case-studies {
+  background: var(--cream);
+  padding: 90px 0;
+}
+
+.case-studies__heading {
+  font-family: var(--font-heading);
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 48px;
+}
+
+.gold-italic {
+  color: var(--gold-dark);
+}
+
+.case-studies__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.case-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 34px rgba(10, 18, 48, 0.1);
+}
+
+.case-card__photo {
+  position: relative;
+  min-height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.case-card__tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(6, 10, 26, 0.75);
+  color: var(--white);
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.case-card__body {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.case-card__stat {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.case-card__stat-value {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--gold-dark);
+}
+
+.case-card__stat-label {
+  font-size: 12.5px;
+  color: var(--text-gray);
+  font-weight: 500;
+}
+
+.case-card__body h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.4;
+}
+
+.case-card__body p {
+  font-size: 13.5px;
+  color: var(--text-gray);
+  line-height: 1.65;
+}
+
+.case-card__link {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--navy);
+  padding-top: 6px;
+}
+
+.case-card:hover .case-card__link {
+  color: var(--gold-dark);
+}
+
+@media (max-width: 900px) {
+  .case-studies {
+    padding: 60px 0;
+  }
+
+  .case-studies__heading {
+    font-size: 26px;
+  }
+
+  .case-studies__grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,90 @@
+.what-we-do {
+  padding: 90px 0px;
+  background: var(--cream);
+}
+
+.what-we-do__heading {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1.5;
+  color: var(--text-gray);
+  max-width: 1110px;
+  margin-bottom: 56px;
+}
+
+.what-we-do__heading strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.what-we-do__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.capability-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.capability-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(10, 18, 48, 0.08);
+  border-color: var(--gold-light);
+}
+
+.capability-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--cream-dark);
+  color: var(--gold-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.capability-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.capability-card p {
+  font-size: 13px;
+  color: var(--text-gray);
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .what-we-do {
+    padding: 60px 0;
+  }
+
+  .what-we-do__heading {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  .what-we-do__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .what-we-do__heading {
+    font-size: 22px;
+  }
+
+  .what-we-do__grid {
+    grid-template-columns: 1fr;
+  }
+}

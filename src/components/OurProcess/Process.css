@@ -1,0 +1,116 @@
+.growth-engine {
+  background: var(--navy);
+  padding: 100px 0;
+  color: var(--white);
+}
+
+.section-label--dark {
+  color: var(--gold-light);
+}
+
+.growth-engine__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 56px;
+  flex-wrap: wrap;
+}
+
+.growth-engine__heading {
+  font-family: var(--font-heading);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.growth-engine .gold-text {
+  color: var(--gold-light);
+  font-style: normal;
+}
+
+.growth-engine__desc {
+  color: #b7bcd6;
+  font-size: 20px;
+  max-width: 600px;
+}
+
+.growth-engine__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.phase-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 26px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.phase-card:hover {
+  background: rgba(255, 255, 255, 0.07);
+  transform: translateY(-4px);
+}
+
+.phase-card__tag {
+  align-self: flex-start;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+  color: var(--navy);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.phase-card__title {
+  font-family: var(--font-heading);
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.phase-card__desc {
+  font-size: 15px;
+  color: #a9adc9;
+  line-height: 1.65;
+  text-transform: capitalize;
+}
+
+@media (max-width: 1024px) {
+  .growth-engine__heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .growth-engine {
+    padding: 60px 0;
+  }
+
+  .growth-engine__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .growth-engine__heading {
+    font-size: 30px;
+  }
+
+  .growth-engine__desc {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 560px) {
+  .growth-engine__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .growth-engine__heading {
+    font-size: 26px;
+  }
+}

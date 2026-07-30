@@ -1,0 +1,110 @@
+.careers__section-heading {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--navy);
+  max-width: 780px;
+  margin-bottom: 20px;
+}
+
+.careers-apply {
+  background: var(--cream-dark);
+  padding: 70px 0;
+}
+
+.careers-apply__grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.careers-apply__intro h2 {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 14px 0 16px;
+  line-height: 1.35;
+}
+
+.careers-apply__intro p {
+  font-size: 14.5px;
+  color: var(--text-gray);
+  line-height: 1.75;
+  max-width: 400px;
+}
+
+.careers-apply__form {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 20px 50px rgba(10, 18, 48, 0.1);
+}
+
+.careers-apply__form input,
+.careers-apply__form textarea {
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  padding: 13px 16px;
+  font-size: 14px;
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background: var(--white);
+  resize: none;
+}
+
+.careers-apply__form input:focus,
+.careers-apply__form textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.careers-apply__file {
+  position: relative;
+  border: 1.5px dashed var(--border-light);
+  border-radius: 10px;
+  padding: 13px 16px;
+  font-size: 14px;
+  color: var(--text-light-gray);
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.careers-apply__file:hover {
+  border-color: var(--gold);
+}
+
+.careers-apply__file input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.careers-apply__form button {
+  margin-top: 6px;
+  width: fit-content;
+}
+
+@media (max-width: 900px) {
+  .careers__section-heading {
+    font-size: 24px;
+  }
+
+  .careers-apply {
+    padding: 50px 0;
+  }
+
+  .careers-apply__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .careers-apply__form {
+    padding: 24px;
+  }
+}
