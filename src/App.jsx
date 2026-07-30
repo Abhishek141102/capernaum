@@ -15,6 +15,10 @@ import IndustriesPage from './pages/IndustriesPage';
 import CaseStudiesPage from './pages/CaseStudiesPage';
 import CareersPage from './pages/CareersPage';
 import ContactPage from './pages/ContactPage';
+import OurTeamPage from './pages/OurTeamPage';
+import CookiePolicy from './pages/legal/CookiePolicy';
+import GDPRPrivacyNotice from './pages/legal/GDPRPrivacyNotice';
+import DataSecurityCompliance from './pages/legal/DataSecurityCompliance';
 
 function App() {
   return (
@@ -35,6 +39,10 @@ function App() {
         <Route path="/case-studies" element={<CaseStudiesPage />} />
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/our-team" element={<OurTeamPage />} />
+        <Route path="/cookie-policy" element={<CookiePolicy />} />
+        <Route path="/gdpr-privacy-notice" element={<GDPRPrivacyNotice />} />
+        <Route path="/data-security-compliance" element={<DataSecurityCompliance />} />
       </Routes>
       <Footer />
     </BrowserRouter>

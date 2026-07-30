@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const LinkedinIcon = () => (
@@ -18,18 +19,27 @@ const InstagramIcon = () => (
   </svg>
 );
 
-const CAPABILITIES = [
-  'Demand Generation',
-  'Account-Based Growth',
-  'Revenue Operations',
-  'Market Intelligence',
-  'Digital Growth Channels',
-  'Strategic Partnership',
+const SERVICES = [
+  { label: 'Customer Support', to: '/services/customer-support' },
+  { label: 'B2B Lead Generation', to: '/services/b2b-lead-generation' },
+  { label: 'IT Solutions', to: '/services/it-solutions' },
+  { label: 'Digital Marketing', to: '/services/digital-marketing' },
+  { label: 'Market Research', to: '/services/market-research' },
+  { label: 'Quality Assurance', to: '/services/quality-assurance' },
 ];
 
-const COMPANY = ['About Us', 'Careers', 'Case Studies', 'Insights'];
+const COMPANY = [
+  { label: 'About Us', to: '/about' },
+  { label: 'Careers', to: '/careers' },
+  { label: 'Case Studies', to: '/case-studies' },
+  { label: 'Our Team', to: '/our-team' },
+];
 
-const LEGAL = ['Privacy Policy', 'Cookie Policy', 'Terms Of Service', 'Contact'];
+const MORE_LINKS = [
+  { label: 'Cookie Policy', to: '/cookie-policy' },
+  { label: 'GDPR Privacy Notice', to: '/gdpr-privacy-notice' },
+  { label: 'Data Security & Compliance', to: '/data-security-compliance' },
+];
 
 function Footer() {
   return (
@@ -48,17 +58,17 @@ function Footer() {
             vendor — and deserve more than a promise.
           </p>
           <div className="footer__socials">
+            <a href="https://www.facebook.com/people/Capernaum-Solutions/61577803556763/" target="_blank" rel="noreferrer" aria-label="Facebook"><FacebookIcon /></a>
+            <a href="https://www.instagram.com/capernaumsolutions_official" target="_blank" rel="noreferrer" aria-label="Instagram"><InstagramIcon /></a>
             <a href="#" aria-label="LinkedIn"><LinkedinIcon /></a>
-            <a href="#" aria-label="Facebook"><FacebookIcon /></a>
-            <a href="#" aria-label="Instagram"><InstagramIcon /></a>
           </div>
         </div>
 
         <div className="footer__col">
-          <h4>Capabilities</h4>
+          <h4>Services</h4>
           <ul>
-            {CAPABILITIES.map((item) => (
-              <li key={item}><a href="#approach">{item}</a></li>
+            {SERVICES.map(({ label, to }) => (
+              <li key={label}><Link to={to}>{label}</Link></li>
             ))}
           </ul>
         </div>
@@ -66,17 +76,17 @@ function Footer() {
         <div className="footer__col">
           <h4>Company</h4>
           <ul>
-            {COMPANY.map((item) => (
-              <li key={item}><a href="#">{item}</a></li>
+            {COMPANY.map(({ label, to }) => (
+              <li key={label}><Link to={to}>{label}</Link></li>
             ))}
           </ul>
         </div>
 
         <div className="footer__col">
-          <h4>Legal</h4>
+          <h4>More Links</h4>
           <ul>
-            {LEGAL.map((item) => (
-              <li key={item}><a href="#">{item}</a></li>
+            {MORE_LINKS.map(({ label, to }) => (
+              <li key={label}><Link to={to}>{label}</Link></li>
             ))}
           </ul>
         </div>
