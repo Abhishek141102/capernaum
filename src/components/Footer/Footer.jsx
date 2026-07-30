@@ -20,8 +20,10 @@ const InstagramIcon = () => (
 );
 
 const SERVICES = [
-  { label: 'Customer Support', to: '/services/customer-support' },
   { label: 'B2B Lead Generation', to: '/services/b2b-lead-generation' },
+  { label: 'Cold Email Outreach', to: '/services/cold-email-outreach' },
+  { label: 'Appointment Setting', to: '/services/appointment-setting' },
+  { label: 'Customer Support', to: '/services/customer-support' },
   { label: 'IT Solutions', to: '/services/it-solutions' },
   { label: 'Digital Marketing', to: '/services/digital-marketing' },
   { label: 'Market Research', to: '/services/market-research' },

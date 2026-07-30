@@ -137,7 +137,7 @@ function AboutUs({ pageMode = false }) {
               We're here to help you find the right solutions for your business. Whether you
               need more information or are ready to get started, our team is just a message away.
             </p>
-            <Link to="/contact" className="about-page-cta__btn">
+            <Link to="/services" className="about-page-cta__btn">
               See Services <ArrowRight size={16} />
             </Link>
           </div>

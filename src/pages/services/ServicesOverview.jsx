@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Phone, Target, CalendarCheck, Headphones, Cpu, Megaphone, Search, CheckCircle, ArrowRight } from 'lucide-react';
+import { Phone, Target, Mail, CalendarCheck, Headphones, Cpu, Megaphone, Search, CheckCircle, ArrowRight } from 'lucide-react';
 import Contact from '../../components/Contact/Contact';
 import './ServicePage.css';
 import './ServicesOverview.css';
@@ -10,6 +10,12 @@ const SERVICES = [
     title: 'B2B Lead Generation',
     desc: 'Identifying and connecting with high-intent decision-makers to build a consistent pipeline of qualified B2B opportunities.',
     slug: 'b2b-lead-generation',
+  },
+  {
+    icon: Mail,
+    title: 'Cold Email Outreach',
+    desc: 'Crafting personalized, high-converting email campaigns that open doors and start meaningful sales conversations.',
+    slug: 'cold-email-outreach',
   },
   {
     icon: CalendarCheck,

@@ -29,7 +29,7 @@ const PHASES = [
 
 function GrowthEngine() {
   return (
-    <section className="growth-engine" id="growth-engine">
+    <section className="growth-engine" id="approach">
       <div className="container">
         <span className="section-label section-label--dark">Our Process</span>
 

@@ -19,6 +19,7 @@ import OurTeamPage from './pages/OurTeamPage';
 import CookiePolicy from './pages/legal/CookiePolicy';
 import GDPRPrivacyNotice from './pages/legal/GDPRPrivacyNotice';
 import DataSecurityCompliance from './pages/legal/DataSecurityCompliance';
+import ColdEmailOutreach from './pages/services/ColdEmailOutreach';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services/b2b-lead-generation" element={<LeadGeneration />} />
+        <Route path="/services/cold-email-outreach" element={<ColdEmailOutreach />} />
         <Route path="/services/appointment-setting" element={<AppointmentSetting />} />
         <Route path="/services/customer-support" element={<CustomerSupport />} />
         <Route path="/services/it-solutions" element={<ITSolutions />} />

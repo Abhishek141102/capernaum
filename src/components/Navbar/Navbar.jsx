@@ -5,6 +5,7 @@ import "./Navbar.css";
 
 const SERVICES = [
   { label: "B2B Lead Generation", slug: "b2b-lead-generation" },
+  { label: "Cold Email Outreach", slug: "cold-email-outreach" },
   { label: "Appointment Setting", slug: "appointment-setting" },
   { label: "Customer Support", slug: "customer-support" },
   { label: "IT Solutions", slug: "it-solutions" },
