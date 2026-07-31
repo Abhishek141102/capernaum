@@ -40,7 +40,7 @@ function Navbar() {
   return (
     <header className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
       <div className="navbar__container">
-        <Link to="/" className="navbar__logo">
+        <Link to="/" className="navbar__logo" onClick={()=>window.scrollTo({top:0, behavior:'smooth'})}>
           <span className="navbar__logo-mark">C</span>
           <div className="navbar__logo-text">
             <span className="navbar__logo-title">CAPERNAUM</span>

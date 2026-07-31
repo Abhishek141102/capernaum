@@ -65,7 +65,7 @@ function AboutUs({ pageMode = false }) {
         </div>
 
         {!pageMode && (
-          <Link to="/about" className="about-us__more-btn">
+          <Link to="/about" className="about-us__more-btn" onClick={()=>window.scrollTo({top:0, behavior:'smooth'})}>
             Learn More About Us <ArrowRight size={16} />
           </Link>
         )}

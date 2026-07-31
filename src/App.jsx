@@ -20,11 +20,13 @@ import CookiePolicy from './pages/legal/CookiePolicy';
 import GDPRPrivacyNotice from './pages/legal/GDPRPrivacyNotice';
 import DataSecurityCompliance from './pages/legal/DataSecurityCompliance';
 import ColdEmailOutreach from './pages/services/ColdEmailOutreach';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services/b2b-lead-generation" element={<LeadGeneration />} />

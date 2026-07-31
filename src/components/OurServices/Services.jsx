@@ -60,9 +60,9 @@ function WhatWeDo() {
         <span className="section-label">Our Services</span>
 
         <h2 className="what-we-do__heading">
-          We provide <strong>seamless, scalable BPO and IT solutions</strong> tailored to meet
-          your business needs — because every interaction is an opportunity to build
-          <strong> trust, strengthen relationships,</strong> and <strong>elevate your brand.</strong>
+          We provide seamless, scalable BPO and IT solutions tailored to meet
+          your business needs — because every interaction is an opportunity to build 
+          trust, strengthen relationships, and elevate your brand.
         </h2>
 
         <div className="what-we-do__grid">

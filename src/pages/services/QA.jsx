@@ -98,9 +98,7 @@ function ITSolutions() {
             excellence. We partner with you to ensure that every process,
             product, and service aligns with the highest standards. From
             streamlined procedures to consistent outcomes, our QA experts ensure
-            that your operations not only meet expectations but exceed them. Let
-            us help identify improvement areas and implement proactive solutions
-            to strengthen your workflow.
+            that your operations not only meet expectations but exceed them. 
           </p>
           <a href="#contact" className="btn btn--gold">
             Contact Us

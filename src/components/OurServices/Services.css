@@ -5,17 +5,12 @@
 
 .what-we-do__heading {
   font-family: var(--font-heading);
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 1.5;
-  color: var(--text-gray);
-  max-width: 1110px;
-  margin-bottom: 56px;
-}
-
-.what-we-do__heading strong {
-  color: var(--navy);
   font-weight: 700;
+  font-size: 34px;
+  line-height: 1.5;
+  color: var(--navy);
+  max-width: var(--container-width);
+  margin-bottom: 56px;
 }
 
 .what-we-do__grid {
