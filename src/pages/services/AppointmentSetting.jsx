@@ -79,6 +79,7 @@ function AppointmentSetting() {
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80')",
+            backgroundPosition:"center 60%"
         }}
       >
         <div className="service-cta__overlay" />

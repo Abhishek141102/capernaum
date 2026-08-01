@@ -47,7 +47,6 @@ function ITSolutions() {
       <section className="service-intro">
         <div className="container">
           <p className="service-intro__lead">
-            Empowering You to Join the Right Opportunity
             <p>
               We're not just about filling positions — we're about matching
               people with purpose. Explore how we make career transitions

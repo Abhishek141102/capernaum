@@ -1,7 +1,7 @@
 .careers__section-heading {
   font-family: var(--font-heading);
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--navy);
   max-width: var(--container-width);
   margin-bottom: 20px;
@@ -19,6 +19,14 @@
   align-items: start;
 }
 
+.careers-apply__intro {
+  min-width: 0;
+}
+
+.careers-apply__form {
+  min-width: 0;
+}
+
 .careers-apply__intro h2 {
   font-family: var(--font-heading);
   font-size: 28px;
@@ -33,6 +41,12 @@
   color: var(--text-gray);
   line-height: 1.75;
   max-width: 400px;
+}
+
+@media (max-width: 900px) {
+  .careers-apply__intro p {
+    max-width: 100%;
+  }
 }
 
 .careers-apply__form {

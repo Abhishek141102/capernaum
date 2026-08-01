@@ -136,16 +136,25 @@ function Navbar() {
             About Us
           </Link>
 
-          <button
-            className="navbar__mobile-link navbar__mobile-dropdown-trigger"
-            onClick={() => setMobileServicesOpen((v) => !v)}
-          >
-            Services{" "}
-            <ChevronDown
-              size={16}
-              className={mobileServicesOpen ? "rotated" : ""}
-            />
-          </button>
+          <div className="navbar__mobile-dropdown-trigger">
+            <Link
+              to="/services"
+              className="navbar__mobile-link"
+              onClick={() => setMenuOpen(false)}
+            >
+              Services
+            </Link>
+            <button
+              className="navbar__mobile-chevron-btn"
+              aria-label="Toggle services submenu"
+              onClick={() => setMobileServicesOpen((v) => !v)}
+            >
+              <ChevronDown
+                size={16}
+                className={mobileServicesOpen ? "rotated" : ""}
+              />
+            </button>
+          </div>
 
           {mobileServicesOpen && (
             <div className="navbar__mobile-submenu">

@@ -113,7 +113,8 @@
 
 /* ===== Who We Are ===== */
 .about-us__intro {
-  padding: 90px 0 70px;
+  padding-top: 90px;
+  padding-bottom: 70px;
 }
 
 .about-us__heading {
@@ -266,7 +267,8 @@
 
 /* ===== Our Mission ===== */
 .about-mission {
-  padding: 90px 0;
+  padding-top: 90px;
+  padding-bottom: 90px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 56px;
@@ -343,7 +345,8 @@
   }
 
   .about-us__intro {
-    padding: 60px 0 50px;
+    padding-top: 60px;
+    padding-bottom: 50px;
   }
 
   .about-us__heading {
@@ -373,7 +376,8 @@
 
   .about-mission {
     grid-template-columns: 1fr;
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
     gap: 32px;
   }
 

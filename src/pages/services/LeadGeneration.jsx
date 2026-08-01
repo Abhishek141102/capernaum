@@ -83,6 +83,7 @@ function LeadGeneration() {
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1400&q=80')",
+            backgroundPosition:"center 20%"
         }}
       >
         <div className="service-cta__overlay" />

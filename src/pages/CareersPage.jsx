@@ -74,7 +74,7 @@ function CareersPage() {
       <section className="service-intro">
         <div className="container">
           <h2 className="careers__section-heading">
-            Join Our Team and Help Shape the Future of Support Services
+            Join Our Team and Help Shape the Future of Support Services.
           </h2>
           <p className="service-intro__lead">
             If you're passionate about helping others, growing your skills, and working with

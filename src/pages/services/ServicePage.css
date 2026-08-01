@@ -68,7 +68,7 @@
 .service-intro__lead {
   font-family: var(--font-heading);
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--navy);
   line-height: 1.5;
   max-width: var(--container-width);
@@ -140,11 +140,12 @@
 /* Accelerate / CTA banner */
 .service-cta {
   position: relative;
-  min-height: 320px;
+  min-height: 400px;
   display: flex;
   align-items: center;
   overflow: hidden;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
 

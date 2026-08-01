@@ -78,6 +78,7 @@ function ColdEmailOutreach() {
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1596526131083-e8c633c948d2?auto=format&fit=crop&w=1400&q=80')",
+            backgroundPosition:"center 20%"
         }}
       >
         <div className="service-cta__overlay" />

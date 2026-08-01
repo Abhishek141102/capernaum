@@ -243,3 +243,15 @@
     font-weight: 600;
   }
 }
+
+.navbar__mobile-dropdown-trigger{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__mobile-chevron-btn{
+  background: none;
+  border: none;
+  padding: 8px;
+}
