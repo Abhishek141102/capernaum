@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail } from 'lucide-react';
 import './Footer.css';
+import capernaumImage from "../../assets/capernaum_12.png";
 
 const LinkedinIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -50,10 +51,9 @@ function Footer() {
       <div className="container footer__grid">
         <div className="footer__brand">
           <div className="footer__logo">
-            <span className="footer__logo-mark">C</span>
+            
             <div className="footer__logo-text">
-              <span className="footer__logo-title">CAPERNAUM</span>
-              <span className="footer__logo-sub">SOLUTIONS PVT LTD</span>
+              <img src={capernaumImage} style={{height:"35px", marginBottom:"10px"}}/>
             </div>
           </div>
           <p className="footer__tagline">

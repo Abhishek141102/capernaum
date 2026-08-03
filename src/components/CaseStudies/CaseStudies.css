@@ -28,11 +28,10 @@
   border: 1px solid var(--border-light);
   border-radius: 18px;
   overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .case-card:hover {
-  transform: translateY(-5px);
+  
   box-shadow: 0 16px 34px rgba(10, 18, 48, 0.1);
 }
 

@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import "./Navbar.css";
+import capernaumImage from "../../assets/capernaum_12.png";
 
 const SERVICES = [
   { label: "B2B Lead Generation", slug: "b2b-lead-generation" },
@@ -41,10 +42,9 @@ function Navbar() {
     <header className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
       <div className="navbar__container">
         <Link to="/" className="navbar__logo" onClick={()=>window.scrollTo({top:0, behavior:'smooth'})}>
-          <span className="navbar__logo-mark">C</span>
+          
           <div className="navbar__logo-text">
-            <span className="navbar__logo-title">CAPERNAUM</span>
-            <span className="navbar__logo-sub">SOLUTIONS PVT LTD</span>
+            <img src={capernaumImage} style={{height:"35px"}}/>
           </div>
         </Link>
 

@@ -61,16 +61,15 @@
   border-radius: 10px;
   font-size: 14.5px;
   font-weight: 600;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn--gold {
-  background: var(--gold-dark);
+  background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
   color: var(--white);
 }
 
 .btn--gold:hover {
-  transform: translateY(-2px);
+  background: var(--gold-dark);
   box-shadow: 0 10px 24px rgba(184, 146, 90, 0.35);
 }
 
@@ -97,11 +96,10 @@
   border-radius: 18px;
   overflow: hidden;
   position: relative;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  
 }
 
 .hero__card:hover {
-  transform: translateY(-4px);
   box-shadow: 0 16px 30px rgba(10, 18, 40, 0.14);
 }
 

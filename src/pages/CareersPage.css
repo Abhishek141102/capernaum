@@ -102,6 +102,7 @@
 .careers-apply__form button {
   margin-top: 6px;
   width: fit-content;
+  align-self: center;
 }
 
 @media (max-width: 900px) {

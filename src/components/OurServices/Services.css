@@ -28,11 +28,9 @@
   flex-direction: column;
   gap: 18px;
   text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .capability-card:hover {
-  transform: translateY(-4px);
   box-shadow: 0 14px 30px rgba(10, 18, 48, 0.08);
   border-color: var(--gold-light);
 }
@@ -49,18 +47,18 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid var(--hero-green);
-  color: var(--hero-green-dark);
+  border: 1px solid var(--gold-dark);
+  color: var(--gold-dark);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  
 }
 
 .capability-card:hover .capability-card__arrow {
-  background: var(--hero-green);
-  color: var(--navy);
-  transform: translateX(2px);
+  background: var(--gold-dark);
+  color: var(--white);
+  
 }
 
 .capability-card__icon {
