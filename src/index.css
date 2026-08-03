@@ -1,22 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --navy: #0a1230;
-  --navy-light: #10193f;
-  --navy-card: #141d45;
-  --gold: #b8925a;
-  --gold-light: #d4af7a;
-  --gold-dark: #9a7642;
+  --navy: #0a1128;
+  --navy-light: #121a3a;
+  --navy-card: #161f45;
+  --header-dark: #121212;
+  --gold: #d4af37;
+  --gold-light: #d4af37;
+  --gold-dark: #b8860b;
+  --gold-hover: #8b6508;
+  --hero-green: #97d919;
+  --hero-green-dark: #7ab812;
+  --hero-green-hover: #6ba00f;
   --cream: #f7f4ef;
   --cream-dark: #efe9df;
   --white: #ffffff;
-  --text-dark: #1c1e2b;
-  --text-gray: #6b6f7b;
+  --text-dark: #383838;
+  --text-gray: #64748b;
   --text-light-gray: #9497a3;
   --border-light: #e8e4dc;
 
-  --font-heading: 'Playfair Display', serif;
-  --font-body: 'Poppins', sans-serif;
+  --font-heading: 'Montserrat', Arial, system-ui, sans-serif;
+  --font-body: 'Inter', sans-serif;
 
   --container-width: 1200px;
 }

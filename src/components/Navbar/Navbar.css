@@ -62,7 +62,7 @@
 }
 
 .navbar__logo-sub {
-  font-size: 8px;
+  font-size: 9px;
   letter-spacing: 1.5px;
   color: var(--text-light-gray);
   font-weight: 500;
@@ -84,6 +84,25 @@
   transition: color 0.2s ease;
   white-space: nowrap;
   background: none;
+  padding-bottom: 4px;
+}
+
+.navbar__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--gold-dark);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.navbar__link.active::after,
+.navbar__link:hover::after {
+  transform: scaleX(1);
 }
 
 .navbar__link.active {
@@ -122,6 +141,18 @@
   transform: translateX(-50%);
   min-width: 220px;
   z-index: 50;
+  animation: navDropdownIn 0.18s ease;
+}
+
+@keyframes navDropdownIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -6px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
 }
 
 .navbar__dropdown-menu-inner {
@@ -242,16 +273,4 @@
     border-radius: 30px;
     font-weight: 600;
   }
-}
-
-.navbar__mobile-dropdown-trigger{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar__mobile-chevron-btn{
-  background: none;
-  border: none;
-  padding: 8px;
 }

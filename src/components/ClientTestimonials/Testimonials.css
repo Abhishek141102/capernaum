@@ -6,7 +6,7 @@
 
 .testimonials__heading {
   font-family: var(--font-heading);
-  font-size: 34px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: 48px;
@@ -37,7 +37,6 @@
   font-size: 15px;
   line-height: 1.75;
   color: #c7cae0;
-  text-transform: capitalize;
 }
 
 .testimonial-card__author {

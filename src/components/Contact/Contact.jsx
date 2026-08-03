@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Phone, Mail } from 'lucide-react';
 import './Contact.css';
 
 function Contact() {
@@ -26,6 +27,17 @@ function Contact() {
             We're selective about the partnerships we take on — which means every engagement
             gets our full strategic attention. Tell us about your growth challenge.
           </p>
+
+          <div className="contact__details">
+            <a href="tel:+12045132366" className="contact__detail">
+              <Phone size={16} />
+              +1 (204) 513-2366
+            </a>
+            <a href="mailto:contact@capernaum.com" className="contact__detail">
+              <Mail size={16} />
+              contact@capernaum.com
+            </a>
+          </div>
         </div>
 
         <div className="contact__panel">

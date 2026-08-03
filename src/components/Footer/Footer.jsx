@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Phone, Mail } from 'lucide-react';
 import './Footer.css';
 
 const LinkedinIcon = () => (
@@ -59,6 +60,14 @@ function Footer() {
             The enterprise growth engine partner for organisations that demand more than a
             vendor — and deserve more than a promise.
           </p>
+          <div className="footer__contact">
+            <a href="tel:+12045132366">
+              <Phone size={15} /> +1 (204) 513-2366
+            </a>
+            <a href="mailto:contact@capernaum.com">
+              <Mail size={15} /> contact@capernaum.com
+            </a>
+          </div>
           <div className="footer__socials">
             <a href="https://www.facebook.com/people/Capernaum-Solutions/61577803556763/" target="_blank" rel="noreferrer" aria-label="Facebook"><FacebookIcon /></a>
             <a href="https://www.instagram.com/capernaumsolutions_official" target="_blank" rel="noreferrer" aria-label="Instagram"><InstagramIcon /></a>
