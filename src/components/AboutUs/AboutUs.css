@@ -194,6 +194,7 @@
   border-radius: 10px;
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
 }
 
 .about-us__more-btn:hover {
