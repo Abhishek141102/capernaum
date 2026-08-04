@@ -350,6 +350,7 @@
   .hero__collage {
     column-count: 4;
   }
+  
 }
 
 @media (max-width: 1024px) {
